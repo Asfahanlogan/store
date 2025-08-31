@@ -1,0 +1,10 @@
+{
+  "username": "admin",
+  "password": "$2y$10$wr4U9//bXZgXvLcLUPwXl.o0R8P9BLYxajU60vqKvdS0zd40tLJLe",
+  "password_plain": "SecureAdmin123!",
+  "wallet_addresses": {
+    "BTC": "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh",
+    "ETH": "0x742d35Cc6634C0532925a3b8D404fddaF789C5C2",
+    "LTC": "ltc1qw508d6qejxtdg4y5r3zarvary0c5xw7k5zpx"
+  }
+}

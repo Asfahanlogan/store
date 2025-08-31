@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john@example.com",
+        "subject": "General Inquiry",
+        "message": "I have a question about your cybersecurity tools.",
+        "created_at": "2025-08-29 10:30:00",
+        "status": "unread"
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane@example.com",
+        "subject": "Technical Support",
+        "message": "I'm having trouble with the network scanner tool. It's not detecting all devices on my network.",
+        "created_at": "2025-08-29 14:15:00",
+        "status": "read"
+    },
+    {
+        "id": 3,
+        "name": "Bob Johnson",
+        "email": "bob@example.com",
+        "subject": "Partnership",
+        "message": "I'm interested in discussing a partnership opportunity for your penetration testing tools.",
+        "created_at": "2025-08-29 16:45:00",
+        "status": "replied"
+    },
+    {
+        "id": 4,
+        "name": "admin",
+        "email": "injection-teams@proton.me",
+        "subject": "Payment Issue",
+        "message": "server",
+        "created_at": "2025-08-29 01:22:10",
+        "status": "read"
+    }
+]

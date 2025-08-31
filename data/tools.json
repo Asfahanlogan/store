@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "Complete Web Development Course",
+    "description": "Master modern web development with HTML, CSS, JavaScript, React, and Node.js. Includes 50+ hours of video content and practical projects.",
+    "price": 99.99,
+    "image": "https://via.placeholder.com/300x200/6366f1/ffffff?text=Web+Dev+Course",
+    "category": "Courses",
+    "type": "course"
+  },
+  {
+    "id": 2,
+    "name": "Python Programming Mastery",
+    "description": "Comprehensive Python programming guide covering basics to advanced topics including data science and machine learning.",
+    "price": 49.99,
+    "image": "https://via.placeholder.com/300x200/10b981/ffffff?text=Python+Book",
+    "category": "Books",
+    "type": "book"
+  },
+  {
+    "id": 3,
+    "name": "Custom Website Development",
+    "description": "Professional website development service. Get a fully responsive, modern website tailored to your business needs.",
+    "price": 799.99,
+    "image": "https://via.placeholder.com/300x200/8b5cf6/ffffff?text=Web+Service",
+    "category": "Services",
+    "type": "service"
+  },
+  {
+    "id": 4,
+    "name": "Code Quest Adventure",
+    "description": "Interactive coding game that teaches programming concepts through fun challenges and puzzles. Perfect for beginners.",
+    "price": 29.99,
+    "image": "https://via.placeholder.com/300x200/ef4444/ffffff?text=Code+Game",
+    "category": "Games",
+    "type": "game"
+  },
+  {
+    "id": 5,
+    "name": "Network Security Toolkit",
+    "description": "Professional network security analysis and penetration testing tools for authorized security assessments.",
+    "price": 149.99,
+    "image": "https://via.placeholder.com/300x200/06b6d4/ffffff?text=Security+Tool",
+    "category": "Tools",
+    "type": "tool"
+  },
+  {
+    "id": 6,
+    "name": "Digital Marketing Masterclass",
+    "description": "Learn effective digital marketing strategies including SEO, social media, email marketing, and paid advertising.",
+    "price": 79.99,
+    "image": "https://via.placeholder.com/300x200/f59e0b/ffffff?text=Marketing+Course",
+    "category": "Courses",
+    "type": "course"
+  },
+  {
+    "id": 7,
+    "name": "React Development Guide",
+    "description": "Step-by-step guide to building modern React applications with hooks, context, and state management.",
+    "price": 34.99,
+    "image": "https://via.placeholder.com/300x200/84cc16/ffffff?text=React+Guide",
+    "category": "Guides",
+    "type": "guide"
+  },
+  {
+    "id": 8,
+    "name": "AI & Machine Learning Basics",
+    "description": "Beginner-friendly introduction to artificial intelligence and machine learning concepts with practical examples.",
+    "price": 59.99,
+    "image": "https://via.placeholder.com/300x200/ec4899/ffffff?text=AI+Book",
+    "category": "Books",
+    "type": "book"
+  },
+  {
+    "id": 9,
+    "name": "Mobile App Development",
+    "description": "Professional mobile app development service for iOS and Android. Custom apps built to your specifications.",
+    "price": 1299.99,
+    "image": "https://via.placeholder.com/300x200/22c55e/ffffff?text=App+Service",
+    "category": "Services",
+    "type": "service"
+  },
+  {
+    "id": 10,
+    "name": "Algorithm Challenge Game",
+    "description": "Competitive programming game featuring algorithm challenges, data structure problems, and coding competitions.",
+    "price": 39.99,
+    "image": "https://via.placeholder.com/300x200/3b82f6/ffffff?text=Algorithm+Game",
+    "category": "Games",
+    "type": "game"
+  },
+  {
+    "id": 11,
+    "name": "Database Design Toolkit",
+    "description": "Comprehensive database design and management tools for MySQL, PostgreSQL, and MongoDB.",
+    "price": 89.99,
+    "image": "https://via.placeholder.com/300x200/f97316/ffffff?text=DB+Tool",
+    "category": "Tools",
+    "type": "tool"
+  },
+  {
+    "id": 12,
+    "name": "SEO Optimization Guide",
+    "description": "Complete guide to search engine optimization with practical techniques and case studies.",
+    "price": 24.99,
+    "image": "https://via.placeholder.com/300x200/8b5cf6/ffffff?text=SEO+Guide",
+    "category": "Guides",
+    "type": "guide"
+  }
+]
