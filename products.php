@@ -296,6 +296,14 @@ sort($types);
                                    class="btn btn-success w-100">
                                     <i class="fas fa-bolt me-1"></i>Buy Now
                                 </a>
+                                <form method="POST" action="cart.php" class="d-grid">
+                                    <input type="hidden" name="action" value="add">
+                                    <input type="hidden" name="tool_id" value="<?php echo $product['id']; ?>">
+                                    <input type="hidden" name="quantity" value="1">
+                                    <button type="submit" class="btn btn-primary w-100">
+                                        <i class="fas fa-cart-plus me-1"></i>Add to Cart
+                                    </button>
+                                </form>
                                 <button class="btn btn-outline-light btn-sm" 
                                         onclick="showProductDetails(<?php echo htmlspecialchars(json_encode($product)); ?>)">
                                     <i class="fas fa-info-circle me-1"></i>View Details
@@ -348,6 +356,14 @@ sort($types);
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <form method="POST" action="cart.php" class="d-inline">
+                    <input type="hidden" name="action" value="add">
+                    <input type="hidden" name="tool_id" id="modalToolId" value="">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="btn btn-primary me-2">
+                        <i class="fas fa-cart-plus me-1"></i>Add to Cart
+                    </button>
+                </form>
                 <a id="productModalBuyBtn" href="#" class="btn btn-success">
                     <i class="fas fa-shopping-cart me-2"></i>Buy Now
                 </a>
@@ -365,6 +381,7 @@ function showProductDetails(product) {
     document.getElementById('productModalPrice').textContent = '$' + product.price.toFixed(2);
     document.getElementById('productModalDescription').textContent = product.description;
     document.getElementById('productModalBuyBtn').href = 'checkout.php?tool_id=' + product.id;
+    document.getElementById('modalToolId').value = product.id;
     
     new bootstrap.Modal(document.getElementById('productDetailsModal')).show();
 }

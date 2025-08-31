@@ -211,7 +211,20 @@ foreach ($tools as $tool) {
     
     <!-- Payment Statistics -->
     <div class="col-lg-4">
+        <!-- Sales Overview -->
         <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="text-primary mb-0">
+                    <i class="fas fa-chart-line me-2"></i>Sales Overview
+                </h5>
+            </div>
+            <div class="card-body">
+                <canvas id="salesChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+
+        <!-- Payment Methods -->
+        <div class="card">
             <div class="card-header">
                 <h5 class="text-primary mb-0">
                     <i class="fas fa-chart-pie me-2"></i>Payment Methods
@@ -224,16 +237,23 @@ foreach ($tools as $tool) {
                         <p class="text-light-emphasis mb-0">No payments yet</p>
                     </div>
                 <?php else: ?>
-                    <div class="mt-3">
-                        <?php foreach ($crypto_stats as $currency => $count): ?>
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <span>
-                                    <i class="fab fa-<?php echo strtolower($currency); ?> me-2 text-warning"></i>
-                                    <?php echo $currency; ?>
-                                </span>
-                                <span class="badge bg-secondary"><?php echo $count; ?></span>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <canvas id="paymentMethodsChart" width="400" height="200"></canvas>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mt-3">
+                                <?php foreach ($crypto_stats as $currency => $count): ?>
+                                    <div class="d-flex justify-content-between align-items-center mb-2">
+                                        <span>
+                                            <i class="fab fa-<?php echo strtolower($currency); ?> me-2 text-warning"></i>
+                                            <?php echo $currency; ?>
+                                        </span>
+                                        <span class="badge bg-secondary"><?php echo $count; ?></span>
+                                    </div>
+                                <?php endforeach; ?>
                             </div>
-                        <?php endforeach; ?>
+                        </div>
                     </div>
                 <?php endif; ?>
             </div>
