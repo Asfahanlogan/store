@@ -170,6 +170,14 @@
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        <a class="nav-link" href="cart.php">
+                            <i class="fas fa-shopping-cart me-1"></i>Cart
+                            <?php if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])): ?>
+                                <span class="badge bg-primary ms-1"><?php echo array_sum(array_column($_SESSION['cart'], 'quantity')); ?></span>
+                            <?php endif; ?>
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="admin/">
                             <i class="fas fa-user-shield me-1"></i>Admin
                         </a>

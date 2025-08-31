@@ -17,6 +17,8 @@ if (!isAdmin()) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <style>
         :root {
@@ -285,4 +287,3 @@ if (!isAdmin()) {
             <!-- Main Content -->
             <div class="col-md-9 col-lg-10">
                 <div class="main-content">
-</original_code>```
