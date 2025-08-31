@@ -285,4 +285,3 @@ if (!isAdmin()) {
             <!-- Main Content -->
             <div class="col-md-9 col-lg-10">
                 <div class="main-content">
-</original_code>```
