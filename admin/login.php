@@ -175,7 +175,7 @@ $page_title = 'Admin Login';
                     <div class="login-header">
                         <i class="fas fa-shield-halved fa-3x text-white mb-3"></i>
                         <h2 class="text-white mb-0">Admin Portal</h2>
-                        <p class="text-white-50 mb-0">HackVault Pro</p>
+                        <p class="text-white-50 mb-0">Store</p>
                     </div>
                     
                     <div class="card-body p-4">

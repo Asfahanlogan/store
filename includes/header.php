@@ -145,7 +145,7 @@
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="<?php echo SITE_URL; ?>">
-                <i class="fas fa-shield-halved me-2"></i>HackVault Pro
+                <i class="fas fa-shield-halved me-2"></i>Store
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>

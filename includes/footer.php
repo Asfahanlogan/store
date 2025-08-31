@@ -3,7 +3,7 @@
             <div class="row">
                 <div class="col-lg-4 mb-4">
                     <h5 class="text-gradient mb-3">
-                        <i class="fas fa-shield-halved me-2"></i>HackVault Pro
+                        <i class="fas fa-shield-halved me-2"></i>Store
                     </h5>
                     <p class="text-light-emphasis">
                         Professional cybersecurity and programming tools for ethical hackers, 
@@ -51,7 +51,7 @@
                 <div class="col-md-6">
                     
                     <p class="mb-0 text-light-emphasis">
-                        &copy; <?php echo date('Y'); ?> HackVault Pro. All rights reserved.
+                        &copy; <?php echo date('Y'); ?> Store. All rights reserved.
                     </p>
 
                 </div>

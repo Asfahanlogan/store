@@ -2,7 +2,7 @@
 session_start();
 
 // Website Configuration
-define('SITE_NAME', 'HackVault Pro');
+define('SITE_NAME', 'Store');
 define('SITE_URL', 'http://localhost');
 define('DATA_PATH', __DIR__ . '/data/');
 
