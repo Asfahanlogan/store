@@ -15,18 +15,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!empty($username) && !empty($password)) {
         $admin = JsonDB::read('admin.json');
         
+        // Debug information
+        error_log("Login attempt - Username: $username");
+        error_log("Admin data loaded: " . json_encode($admin));
+        
         // Use proper password hash verification
         if (isset($admin['username']) && isset($admin['password'])) {
-            if ($username === $admin['username'] && password_verify($password, $admin['password'])) {
+            $password_verify_result = password_verify($password, $admin['password']);
+            error_log("Password verification result: " . ($password_verify_result ? 'true' : 'false'));
+            error_log("Stored hash: " . $admin['password']);
+            
+            if ($username === $admin['username'] && $password_verify_result) {
                 $_SESSION['admin_logged_in'] = true;
                 $_SESSION['admin_username'] = $username;
                 $_SESSION['login_time'] = time();
                 redirect('dashboard.php');
             } else {
                 $error_message = 'Invalid username or password.';
+                error_log("Login failed - Username match: " . ($username === $admin['username'] ? 'true' : 'false'));
             }
         } else {
             $error_message = 'Admin configuration error.';
+            error_log("Admin config error - missing username or password");
         }
     } else {
         $error_message = 'Please fill in all fields.';
